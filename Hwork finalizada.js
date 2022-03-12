@@ -36,7 +36,7 @@ function suma(x, y) {
   // "x" e "y" son números
   // Suma "x" e "y" juntos y devuelve el valor
   // Tu código:
- return x + y;
+ return x + y
 }
 
 function resta(x, y) {
@@ -72,11 +72,7 @@ function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (str1.length === str2.length) { // aunque si pongo solo return (str1 === str2) me va a deolver true.
-    return true;
-    } else {
-     return false;
-   }
+  return str1.length === str2.length;
   }
 
 

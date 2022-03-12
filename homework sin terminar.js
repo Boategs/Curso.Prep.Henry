@@ -89,12 +89,8 @@ function estaEnRango(numero) {
   // Devuelve "true" si "numero" es menor que 50 y mayor que 20
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (numero < 50 && numero > 20) {
-    return true;
-  }
-      return false;
-    }
-   
+  if (numero < 50 && numero > 20) 
+
 function esEntero(numero) {
   // Devuelve "true" si "numero" es un entero (int/integer)
   // Ejemplo: 0.8 -> false
@@ -124,19 +120,17 @@ function operadoresLogicos(num1, num2, num3) {
   //Si num3 es más grande que num1 y num2, aumentar su valor en 1 y retornar el nuevo valor.
   //0 no es ni positivo ni negativo. Si alguno de los argumentos es 0, retornar "Error".
   //Si no se cumplen ninguna de las condiciones anteriores, retornar false. 
-
-  if (num1 < 0 || num2 < 0 || num3 < 0){
-return "Hay negativos";
+  if(num1 < 0 || num2 < 0 || num3 < 0) {
+    return "Hay negativos";
   }
-  else if (num1 === 0 || num2 === 0 || num3 === 0) {
+  else if(num1 === 0 || num2 === 0 || num3 === 0) {
     return "Error";
   }
-  else if (num1 > 0 && num1 > num2 && num1 > num3){
+  else if(num1 > 0 && num1 > num2 && num1 > num3) {
     return "Número 1 es mayor y positivo";
   }
-  
-  else if (num3 > num1 && num3 > num2) {
-return num3 +1;
+  else if(num3 > num1 && num3 > num2) {
+    return num3 + 1;
   }
   else {
     return false;
@@ -151,10 +145,11 @@ function esPrimo(numero) {
   // Nota: Los números 0 y 1 NO son considerados números primos
   if(numero < 2) return false;
   if(numero === 2) return true;
-  for(var i = 2; i < numero; i++) {
+  for(var i = 2; i < numero; i++)
     if(numero % i === 0) {
       return false;
     }
+
   }
   return true;
 }
@@ -173,11 +168,7 @@ function tablaDelSeis(){
   //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí
-  let arrayTablaDel6 = []
-  for (let i = 0; i < 11; i++) {
-        arrayTablaDel6.push(6 * i)
-  }
-  return arrayTablaDel6
+
 }
 
 function tieneTresDigitos(numero){
@@ -193,15 +184,8 @@ function doWhile(numero) {
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
   //Retornar el valor final.
   //Usar el bucle do ... while.
-  var a = numero;
-  var i = 0;
-  do {
-    i = i + 1;
-    a = a + 5;
-  }
-  while(i < 8);
-  return a;
-}
+  var a = 0
+} 
 
 
 // No modificar nada debajo de esta línea
